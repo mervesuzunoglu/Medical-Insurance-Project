@@ -1,4 +1,4 @@
-# Python Syntax: Medical Insurance Project
+# Python Syntax and Functions: Medical Insurance Project
 
 ## Overview
 
@@ -14,17 +14,18 @@ The project involves setting up variables for each factor and then using a formu
 
 The following variables are used in the estimation formula:
 
-- `age`: Age of the individual in years
-- `sex`: 0 for female, 1 for male*
-- `bmi`: Individual’s body mass index
-- `num_of_children`: Number of children the individual has
-- `smoker`: 0 for a non-smoker, 1 for a smoker
+- **age:** Age of the individual in years
+- **sex:** 0 for female, 1 for male*
+- **bmi:** Individual’s body mass index
+- **num_of_children:** Number of children the individual has
+- **smoker:** 0 for a non-smoker, 1 for a smoker
 
 ## Example
 
 For instance, at the top of `script.py`, we create variables for a 28-year-old, non-smoking woman who has three children and a BMI of 26.2:
 
 ```python
+pythonCopy code
 age = 28
 sex = 0
 bmi = 26.2
@@ -36,23 +37,39 @@ smoker = 0
 
 The insurance cost is calculated using the following formula:
 
-```makefile
+```python
+pythonCopy code
 insurance_cost = 250 * age - 128 * sex + 370 * bmi + 425 * num_of_children + 24000 * smoker - 12500
 ```
 
-This formula provides an estimate of the yearly insurance cost for an individual based on the given factors.
+Additionally, here is a Python function to calculate the insurance cost:
+
+```python
+pythonCopy code
+def calculate_insurance_cost(name, age, sex, bmi, num_of_children, smoker):
+    estimated_cost = 250 * age - 128 * sex + 370 * bmi + 425 * num_of_children + 24000 * smoker - 12500
+    print("The estimated insurance cost for " + name + " is " + str(estimated_cost) + " dollars.")
+    return estimated_cost
+```
+
+This function calculates the insurance cost for an individual based on the given factors and prints the result.
 
 ## Project Goals
 
-The main goal of this project is to:
+The main goals of this project are to:
 
 1. Set up the variables for each factor.
 2. Calculate the insurance cost using the formula.
 3. Explore how changes in individual factors impact the insurance cost estimation.
+4. Apply new knowledge of Python functions to write a useful function that calculates medical insurance costs.
 
 ## Usage
 
 To run the project, simply execute the `script.py` file. You can modify the variables to see how changes in each factor affect the insurance cost.
+
+## Regular Updates
+
+This repository is part of the Codecademy Projects and is regularly updated. As I proceed through the course and complete additional projects, new `.py` files will be added, and required changes will be made to the README file to reflect the updates and new insights.
 
 ## Conclusion
 
