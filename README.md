@@ -1,4 +1,4 @@
-# Python Syntax and Functions: Medical Insurance Project
+# Python Syntax, Functions, and **Control Flow**: Medical Insurance Project
 
 ## Overview
 
@@ -61,7 +61,23 @@ The main goals of this project are to:
 1. Set up the variables for each factor.
 2. Calculate the insurance cost using the formula.
 3. Explore how changes in individual factors impact the insurance cost estimation.
-4. Apply new knowledge of Python functions to write a useful function that calculates medical insurance costs.
+4. Apply your new knowledge of Python functions to write a useful function that calculates medical insurance costs.
+5. Apply the knowledge of Python control flow to write code that gives people advice on how to lower their medical insurance costs.
+
+## Additional Contribution
+
+To provide advice on how to lower medical insurance costs, especially regarding smoking status, the following function was created:
+
+```python
+pythonCopy code
+def analyze_smoker(smoker_status):
+    if smoker_status == 1:
+        print("To lower your cost, you should consider quitting smoking.")
+    else:
+        print("Smoking is not an issue for you.")
+```
+
+In general, insurance costs are higher for smokers. This function analyzes an individual’s smoking status and provides advice on how to lower insurance costs based on whether they smoke or not.
 
 ## Usage
 
