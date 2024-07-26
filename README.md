@@ -1,4 +1,4 @@
-# Python Syntax, Functions, and **Control Flow**: Medical Insurance Project
+# Python Syntax and Functions: Medical Insurance Project
 
 ## Overview
 
@@ -25,7 +25,6 @@ The following variables are used in the estimation formula:
 For instance, at the top of `script.py`, we create variables for a 28-year-old, non-smoking woman who has three children and a BMI of 26.2:
 
 ```python
-pythonCopy code
 age = 28
 sex = 0
 bmi = 26.2
@@ -38,14 +37,12 @@ smoker = 0
 The insurance cost is calculated using the following formula:
 
 ```python
-pythonCopy code
 insurance_cost = 250 * age - 128 * sex + 370 * bmi + 425 * num_of_children + 24000 * smoker - 12500
 ```
 
 Additionally, here is a Python function to calculate the insurance cost:
 
 ```python
-pythonCopy code
 def calculate_insurance_cost(name, age, sex, bmi, num_of_children, smoker):
     estimated_cost = 250 * age - 128 * sex + 370 * bmi + 425 * num_of_children + 24000 * smoker - 12500
     print("The estimated insurance cost for " + name + " is " + str(estimated_cost) + " dollars.")
@@ -63,13 +60,13 @@ The main goals of this project are to:
 3. Explore how changes in individual factors impact the insurance cost estimation.
 4. Apply your new knowledge of Python functions to write a useful function that calculates medical insurance costs.
 5. Apply the knowledge of Python control flow to write code that gives people advice on how to lower their medical insurance costs.
+6. Use Python lists to compare the estimated insurance costs (as calculated by our function) to the actual insurance costs, as well as the difference between them.
 
 ## Additional Contribution
 
 To provide advice on how to lower medical insurance costs, especially regarding smoking status, the following function was created:
 
 ```python
-pythonCopy code
 def analyze_smoker(smoker_status):
     if smoker_status == 1:
         print("To lower your cost, you should consider quitting smoking.")
@@ -93,4 +90,4 @@ This project provides a basic introduction to how various factors can influence 
 
 ## Acknowledgments
 
-This project was completed as part of a project on the Codecademy platform.
+This project was completed as part of a project on the Codecademy platform
