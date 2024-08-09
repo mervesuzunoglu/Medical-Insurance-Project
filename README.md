@@ -30,6 +30,7 @@ sex = 0
 bmi = 26.2
 num_of_children = 3
 smoker = 0
+
 ```
 
 ## Formula
@@ -38,6 +39,7 @@ The insurance cost is calculated using the following formula:
 
 ```python
 insurance_cost = 250 * age - 128 * sex + 370 * bmi + 425 * num_of_children + 24000 * smoker - 12500
+
 ```
 
 Additionally, here is a Python function to calculate the insurance cost:
@@ -47,6 +49,7 @@ def calculate_insurance_cost(name, age, sex, bmi, num_of_children, smoker):
     estimated_cost = 250 * age - 128 * sex + 370 * bmi + 425 * num_of_children + 24000 * smoker - 12500
     print("The estimated insurance cost for " + name + " is " + str(estimated_cost) + " dollars.")
     return estimated_cost
+
 ```
 
 This function calculates the insurance cost for an individual based on the given factors and prints the result.
@@ -61,7 +64,20 @@ The main goals of this project are to:
 4. Apply your new knowledge of Python functions to write a useful function that calculates medical insurance costs.
 5. Apply the knowledge of Python control flow to write code that gives people advice on how to lower their medical insurance costs.
 6. Use Python lists to compare the estimated insurance costs (as calculated by our function) to the actual insurance costs, as well as the difference between them.
+7. Work with Python lists using methods and functions to sort through medical insurance cost data for some patients.
+    
+    Methods and functions used:
+ ```python
+    - .append()
+    - .insert()
+    - .pop()
+    - .sort()
+    - .count()
+    - sorted()
+    - range()
+    - len()
 
+```
 ## Additional Contribution
 
 To provide advice on how to lower medical insurance costs, especially regarding smoking status, the following function was created:
@@ -72,6 +88,7 @@ def analyze_smoker(smoker_status):
         print("To lower your cost, you should consider quitting smoking.")
     else:
         print("Smoking is not an issue for you.")
+
 ```
 
 In general, insurance costs are higher for smokers. This function analyzes an individual’s smoking status and provides advice on how to lower insurance costs based on whether they smoke or not.
@@ -90,4 +107,4 @@ This project provides a basic introduction to how various factors can influence 
 
 ## Acknowledgments
 
-This project was completed as part of a project on the Codecademy platform
+This project was completed as part of a project on the Codecademy platform.
