@@ -62,18 +62,29 @@ The main goals of this project are to:
 5. Apply the knowledge of Python control flow to write code that gives people advice on how to lower their medical insurance costs.
 6. Use Python lists to compare the estimated insurance costs (as calculated by our function) to the actual insurance costs, as well as the difference between them.
 7. Work with Python lists using methods and functions to sort through medical insurance cost data for some patients.
+    
     Methods and functions used:
-   ```python
-    - .append()
-    - .insert()
-    - .pop()
-    - .sort()
-    - .count()
-    - sorted()
-    - range()
-    - len()
-   ```
-9. Use Python loops to iterate through and analyze medical insurance cost data.
+    
+    - `.append()`
+    - `.insert()`
+    - `.pop()`
+    - `.sort()`
+    - `.count()`
+    - `sorted()`
+    - `range()`
+    - `len()`
+8. Use Python loops to iterate through and analyze medical insurance cost data.
+9. Use Python string methods to tidy up, clean, and analyze the Medical Insurance data set.
+    
+    String methods used:
+    
+    - `.upper()`
+    - `.split()`
+    - `.join()`
+    - `.strip()`
+    - `.replace()`
+    - `.find()`
+    - `.format()`
 
 ## Additional Contribution
 
